@@ -24,7 +24,7 @@ pipeline {
   stage('Plan') {
             steps {
                 sh 'pwd;cd terraform/ ; terraform init'
-                sh "ls "
+                sh "cd terraform;ls "
             }
         }
     }
